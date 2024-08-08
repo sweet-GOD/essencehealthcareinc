@@ -1,6 +1,6 @@
 import React, { useEffect, useRef} from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
-import img from "../assets/2.png";
+import img from "../assets/22.jpg";
 import {Link} from "react-router-dom"
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Button from "../layouts/Button";
@@ -27,7 +27,7 @@ const About = () => {
 
         <motion.p ref={ref}
           variants={{
-            hidden: { opacity: 0, x: -75 },
+            hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 },
           }}
           initial="hidden"
@@ -37,7 +37,7 @@ const About = () => {
         </motion.p>
         <motion.p ref={ref}
           variants={{
-            hidden: { opacity: 0, x: -75 },
+            hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 },
           }}
           initial="hidden"
@@ -47,7 +47,7 @@ const About = () => {
         </motion.p>
         <motion.p ref={ref}
           variants={{
-            hidden: { opacity: 0, x: -75 },
+            hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 },
           }}
           initial="hidden"
@@ -58,7 +58,7 @@ const About = () => {
       </div>
       <motion.div ref={ref}
           variants={{
-            hidden: { opacity: 0, y: -75 },
+            hidden: { opacity: 0, y: -50 },
             visible: { opacity: 1, y: 0 },
           }}
           initial="hidden"

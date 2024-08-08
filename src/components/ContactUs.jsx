@@ -19,7 +19,7 @@ const ContactUs = () => {
         <div ref={ref} className="flex flex-col lg:flex-row justify-between items-center lg:px-32 px-5 pt-14 lg:py-40 gap-8">
             <motion.div ref={ref}
                 variants={{
-                    hidden: { opacity: 0, y: -75 },
+                    hidden: { opacity: 0, y: -50 },
                     visible: { opacity: 1, y: 0 },
                 }}
                 initial="hidden"
@@ -32,7 +32,7 @@ const ContactUs = () => {
                 <h1 className="text-4xl font-semibold text-center lg:text-start">Contact Us</h1>
                 <motion.form ref={ref}
                     variants={{
-                        hidden: { opacity: 0, x: -75 },
+                        hidden: { opacity: 0, x: -50 },
                         visible: { opacity: 1, x: 0 },
                     }}
                     initial="hidden"

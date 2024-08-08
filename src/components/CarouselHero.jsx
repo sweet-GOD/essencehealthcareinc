@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
-import one from "../assets/1.png";
-import four from "../assets/14.png";
-import two from "../assets/3.png";
-import three from "../assets/4.png";
-import five from "../assets/7.png";
+import one from "../assets/21.jpg";
+import four from "../assets/23.jpg";
+import two from "../assets/25.jpg";
+import three from "../assets/24.jpg";
+import five from "../assets/22.jpg";
 import { HeroSlider } from "./HeroSlider";
 
 

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef} from "react";
 import About from '../components/About'
 import { motion, useAnimation, useInView } from "framer-motion";
-import img1 from "../assets/3.png"
+import img1 from "../assets/23.jpg"
 import Vision from "../components/Vision";
 import Mission from "../components/Mission";
 
@@ -43,7 +43,7 @@ const AboutPage = () => {
 About Us
 </motion.h1>
         <img
-          className="w-full h-full object-top"
+          className="w-full h-full object-bottom"
           src={img1}
           alt=""
         />

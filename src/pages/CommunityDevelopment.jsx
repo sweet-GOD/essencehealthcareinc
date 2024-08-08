@@ -1,6 +1,6 @@
 import React, { useEffect, useRef} from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
-import img1 from "../assets/3.png"
+import img1 from "../assets/22.jpg"
 
 const CommunityDevelopment = () => {
   const ref = useRef(null);
@@ -40,7 +40,7 @@ const CommunityDevelopment = () => {
 Community Development Service
 </motion.h1>
         <img
-          className="w-full h-full object-top"
+          className="w-full h-full object-center"
           src={img1}
           alt=""
         />

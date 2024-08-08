@@ -1,6 +1,6 @@
 import React, { useEffect, useRef} from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
-import img1 from "../assets/3.png"
+import img1 from "../assets/24.jpg"
 
 const PersonalSupport = () => {
   const ref = useRef(null);
@@ -40,7 +40,7 @@ const PersonalSupport = () => {
 Personal Support Service
 </motion.h1>
         <img
-          className="w-full h-full object-top"
+          className="w-full h-full object-center"
           src={img1}
           alt=""
         />

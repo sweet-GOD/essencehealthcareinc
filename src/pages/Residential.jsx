@@ -1,6 +1,6 @@
 import React, { useEffect, useRef} from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
-import img1 from "../assets/3.png"
+import img1 from "../assets/25.jpg"
 
 const Residential = () => {
   const ref = useRef(null);
