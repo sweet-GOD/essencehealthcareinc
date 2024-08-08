@@ -4,6 +4,11 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./components/About";
+import AboutPage from "./pages/AboutPage";
+import Residential from "./pages/Residential";
+import CommunityDevelopment from "./pages/CommunityDevelopment";
+import DailyRespite from "./pages/DailyRespite";
+import PersonalSupport from "./pages/PersonalSupport";
 
 const Layout = () => {
   return (
@@ -20,7 +25,11 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { path: '/', element: <Home /> },
-      { path: '/about', element: <About /> },
+      { path: '/about', element: <AboutPage /> },
+      { path: '/residential', element: <Residential /> },
+      { path: '/community-development', element: <CommunityDevelopment /> },
+      { path: '/daily-respite', element: <DailyRespite /> },
+      { path: '/personal-support', element: <PersonalSupport /> },
       
     ]
   }

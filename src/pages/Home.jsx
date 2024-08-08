@@ -8,6 +8,7 @@ import Blogs from '../components/Blogs';
 import Vision from '../components/Vision';
 import Mission from '../components/Mission';
 import ContactUs from '../components/ContactUs';
+import Button from '../layouts/Button';
 
 const Home = () => {
     const ref = useRef(null);
@@ -21,7 +22,17 @@ const Home = () => {
         <div ref={ref} className='m-0 p-0'>
             <CarouselHero />
             {/* <Hero /> */}
-            <h1 className=" text-4xl font-semibold text-center    pt-14 lg:pt-20">Welcome to <br />Essence Healthcare Incorporation</h1>
+            <div className="pt-14 lg:pt-20 flex flex-col items-center lg:flex-row justify-between lg:px-32 px-5">
+        <div>
+          <h1 className=" text-4xl font-semibold text-center lg:text-start">
+          Welcome to <br />Essence Healthcare Incorporation
+          </h1>
+          
+        </div>
+        <div className=" mt-4 lg:mt-0">
+          <Button title="Read more" link={"/about"} />
+        </div>
+      </div>
             <About />
             <Services />
             

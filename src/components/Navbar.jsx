@@ -172,7 +172,7 @@ const Navbar = () => {
               Daily Respite
             </Link>
             <Link
-              to="/residential"
+              to="/personal-support"
               className={getLinkStyle("/personal-support")}
               onClick={closeMenu}
             >

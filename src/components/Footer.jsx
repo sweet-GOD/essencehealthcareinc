@@ -1,12 +1,42 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png"
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import 'animate.css';
 
 const Footer = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <div className=" bg-[url('assets/footerBg.png')] text-gray-900 bg-cover rounded-t-3xl mt-10  md:pt-20 ">
+
+<div
+      className={`fixed bottom-4 right-2 bg-hoverColor shadow py-3 px-6 rounded-3xl transition-opacity duration-300 ease-in-out z-30 ${
+        isVisible ? 'opacity-100 animate__animated animate__bounce animate__infinite animate__slower' : 'opacity-0'
+      }`}
+      style={{ visibility: isVisible ? 'visible' : 'hidden' }}
+    >
+      <a href="https://wa.me/2348141946580"  target="_blank" rel="noreferrer" className='flex items-center justify-center gap-2 text-white text-lg'>
+        <FaWhatsapp size={26} /> Chat with me
+      </a>
+    </div>
+
       <div className="flex flex-col md:flex-row justify-between items-start p-8 lg:px-32 px-5">
         <div className=" w-full md:w-1/4">
           <h1 className=" font-semibold text-xl pb-2">

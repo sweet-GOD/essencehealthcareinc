@@ -1,11 +1,8 @@
 import React, { useEffect, useRef} from "react";
-import About from '../components/About'
 import { motion, useAnimation, useInView } from "framer-motion";
 import img1 from "../assets/3.png"
-import Vision from "../components/Vision";
-import Mission from "../components/Mission";
 
-const AboutPage = () => {
+const Residential = () => {
   const ref = useRef(null);
   const isInView = useInView(ref);
 
@@ -40,7 +37,7 @@ const AboutPage = () => {
           transition={{ duration: 0.4, delay: 0.4 }}
           className="absolute text-5xl head text-white font-bold transform -translate-y-1/2 top-1/2 lg:left-40 left-12   uppercase"
         >
-About Us
+Residential Service
 </motion.h1>
         <img
           className="w-full h-full object-top"
@@ -50,11 +47,8 @@ About Us
       </div>
     </div>
     
-      <About /> 
-      <Vision />
-      <Mission /> 
     </div>
   )
 }
 
-export default AboutPage
+export default Residential
