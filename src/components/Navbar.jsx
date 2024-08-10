@@ -83,9 +83,12 @@ const Navbar = () => {
 
       </div>
 
+      
+
       <div className=" w-full z-50 ">
         <div>
-          <div className={`${isScrolled ? 'fixed top-0 left-0  w-full bg-[#ffffffa4] backdrop-blur shadow-lg transition-all duration-300 ' : 'relative bg-transparent '} flex flex-row justify-between z-50  md:px-32 px-4 bg-white text-base `} >
+          <div className={`${isScrolled ? 'fixed top-0 left-0  w-full bg-[#ffffffa4] backdrop-blur shadow-lg transition-all duration-300 ' : 'relative bg-transparent '} flex flex-row justify-between z-40  md:px-32 px-4 bg-white text-base pt-2`} >
+            
             <div className=" flex flex-row items-center cursor-pointer">
               <Link to="/" >
                 <img src={logo} className='md:h-24 h-20' alt="spectrite-logo" />
@@ -133,7 +136,15 @@ const Navbar = () => {
                 <AiOutlineMenu size={28} onClick={handleChange} />
               )}
             </div>
+            
           </div>
+
+          <div className="overflow-hidden  top-0 left-0 w-full fixed backdrop-blur-sm bg-hoverColor text-white z-50">
+  <div className="animate-marquee whitespace-nowrap text-center font-thin text-xs">
+    Welcome to Essence Healthcare Incorporation
+  </div>
+</div>
+          
           <div
             className={`${menu ? "translate-x-0" : "-translate-x-full"
               } lg:hidden flex flex-col fixed bg-[#ffffffa4] backdrop-blur  left-0 top-24 font-semibold  text-center pt-8 pb-8 shadow-lg gap-8 w-full h-full transition-transform duration-300 text-xl z-50`}
@@ -196,6 +207,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+        
       </div>
     </div>
   );
