@@ -49,7 +49,7 @@ const Navbar = () => {
   };
 
   const getLinkStyle = (path) => {
-    return location.pathname === path ? 'text-[#3ba934] ' : 'hover:text-hoverColor transition-all text-gray-500 cursor-pointer ';
+    return location.pathname === path ? 'text-[#3ba934] ' : 'hover:text-hoverColor transition-all text-black cursor-pointer ';
   };
 
   return (

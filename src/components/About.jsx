@@ -1,9 +1,6 @@
 import React, { useEffect, useRef} from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import img from "../assets/22.jpg";
-import {Link} from "react-router-dom"
-import { AiOutlineArrowRight } from "react-icons/ai";
-import Button from "../layouts/Button";
 
 const About = () => {
   const ref = useRef(null);

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef} from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
-import img1 from "../assets/24.jpg"
+import img1 from "../assets/3.png"
+import img from "../assets/24.jpg"
 
 const PersonalSupport = () => {
   const ref = useRef(null);
@@ -45,6 +46,63 @@ Personal Support Service
           alt=""
         />
       </div>
+    </div>
+
+    <div ref={ref} className="flex flex-col lg:flex-row justify-between items-start lg:px-32 px-5 pt-14 lg:pt-16 gap-8">
+      <div className=" w-full lg:w-3/4 space-y-4">
+
+      
+
+        <motion.p ref={ref}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          initial="hidden"
+          animate={mainControls}
+          transition={{ duration: 0.4, delay: 0.4 }} className=" text-justify lg:text-start">
+We provides personal support tailored assistance to individuals who require help with daily activities due to age, illness, or disability. 
+        </motion.p>
+        <motion.p ref={ref}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          initial="hidden"
+          animate={mainControls}
+          transition={{ duration: 0.4, delay: 0.6 }} className="text-justify lg:text-start">
+        This support can include meal preparation, medication management, personal hygiene, and mobility assistance, provided either at home or in care facilities. 
+        </motion.p>
+        <motion.p ref={ref}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          initial="hidden"
+          animate={mainControls}
+          transition={{ duration: 0.4, delay: 0.6 }} className="text-justify lg:text-start">
+        The goal is to enhance the quality of life for individuals by maintaining their independence, dignity, and comfort. 
+        </motion.p>
+        <motion.p ref={ref}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          initial="hidden"
+          animate={mainControls}
+          transition={{ duration: 0.4, delay: 0.6 }} className="text-justify lg:text-start">Personal support workers play a critical role in healthcare by providing compassionate care that respects the personal preferences and needs of each individual. 
+        </motion.p>
+      </div>
+      <motion.div ref={ref}
+          variants={{
+            hidden: { opacity: 0, y: -50 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          initial="hidden"
+          animate={mainControls}
+          transition={{ duration: 0.4, delay: 0.6 }} className="h-[400px] overflow-hidden w-full lg:w-3/4">
+        <img className=" rounded-lg object-cover h-full w-full" src={img} alt="img" />
+      </motion.div>
     </div>
     
     </div>

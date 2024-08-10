@@ -1,8 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import img from "../assets/25.jpg";
-import { Link } from "react-router-dom"
-import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Mission = () => {
     const ref = useRef(null);
@@ -31,8 +29,8 @@ const Mission = () => {
                     initial="hidden"
                     animate={mainControls}
                     transition={{ duration: 0.4, delay: 0.4 }} className=" text-justify lg:text-start">
-Essence Healthcare, Inc's mission is to provide compassionate, comprehensive healthcare services to individuals with disabilities, focusing on accessibility, equality, and support. <br /> <br /> 
-We are committed to innovating solutions that enhance the health and wellbeing of our clients, advocating for their rights, and ensuring they receive the care they need to lead fulfilling lives.
+                    Essence Healthcare, Inc's mission is to provide compassionate, comprehensive healthcare services to individuals with disabilities, focusing on accessibility, equality, and support. <br /> <br />
+                    We are committed to innovating solutions that enhance the health and wellbeing of our clients, advocating for their rights, and ensuring they receive the care they need to lead fulfilling lives.
 
                 </motion.p>
 

@@ -61,9 +61,9 @@ export const HeroSlider = ({ slides }) => {
                         className="h-screen object-cover w-full" 
                         src={slide.url} 
                         alt="Slide image" 
-                        // loading="lazy" 
-                        // srcSet={`${slide.url}?w=600 600w, ${slide.url}?w=1200 1200w`} 
-                        // sizes="(max-width: 600px) 600px, 1200px"
+                        loading="lazy" 
+                        srcSet={`${slide.url}?w=600 600w, ${slide.url}?w=1200 1200w`} 
+                        sizes="(max-width: 600px) 600px, 1200px"
                     />
 
                     <div className="w-11/12 lg:w-4/5 absolute lg:bottom-[35%] lg:left-32 bottom-[15%] left-4 space-y-6 mt-10 text-white">
