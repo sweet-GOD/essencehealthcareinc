@@ -89,14 +89,14 @@ const Footer = () => {
           <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Services</h1>
           <nav className=" flex flex-col gap-2">
             <Link
-              to="services"
+              to="/residential"
 
               className=" hover:text-hoverColor duration-300 hover:scale-100 transition-all cursor-pointer"
             >
               Residential
             </Link>
             <Link
-              to="/residential"
+              to="/daily-respite"
 
               className=" hover:text-hoverColor duration-300 hover:scale-100 transition-all cursor-pointer"
             >
