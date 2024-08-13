@@ -33,7 +33,7 @@ export const HeroSlider = ({ slides }) => {
     return (
         <Swiper
             autoplay={{
-                delay: 12000,
+                delay: 10000,
                 disableOnInteraction: false,
             }}
             grabCursor={true}
@@ -67,30 +67,16 @@ export const HeroSlider = ({ slides }) => {
                     />
 
                     <div className="w-11/12 lg:w-4/5 absolute lg:bottom-[35%] lg:left-32 bottom-[15%] left-4 space-y-6 mt-10 text-white">
-                        <motion.h1
-                            variants={{
-                                hidden: { opacity: 0, y: 50 },
-                                visible: { opacity: 1, y: 0 },
-                            }}
-                            initial="hidden"
-                            animate={controls}
-                            transition={{ duration: 0.4, delay: 0.2 }}
+                        <h1
                             className="text-5xl font-bold leading-tight"
                         >
                             {slide.text}
-                        </motion.h1>
-                        <motion.p
-                            variants={{
-                                hidden: { opacity: 0, y: 50 },
-                                visible: { opacity: 1, y: 0 },
-                            }}
-                            initial="hidden"
-                            animate={controls}
-                            transition={{ duration: 0.4, delay: 0.3 }}
+                        </h1>
+                        <p
                             className="pb-8"
                         >
                             {slide.sub}
-                        </motion.p>
+                        </p>
 
                         <Button title="Learn More" link={slide.link} />
                     </div>
