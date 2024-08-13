@@ -1,7 +1,7 @@
 import React, { useEffect, useRef} from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import img1 from "../assets/23.jpg"
-import img from "../assets/16.png"
+import img from "../assets/9-min.jpg"
 
 
 const DailyRespite = () => {

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef} from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
-import img1 from "../assets/3.png"
+import img1 from "../assets/11-min.jpg"
 import img from "../assets/24.jpg"
 
 const PersonalSupport = () => {

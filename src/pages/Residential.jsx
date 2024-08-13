@@ -1,7 +1,7 @@
 import React, { useEffect, useRef} from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
-import img1 from "../assets/25.jpg"
-import img from "../assets/1.png"
+import img from "../assets/25.jpg"
+import img1 from "../assets/8-min.jpg"
 
 const Residential = () => {
   const ref = useRef(null);
@@ -41,7 +41,7 @@ const Residential = () => {
 Residential Service
 </motion.h1>
         <img
-          className="w-full h-full object-top"
+          className="w-full h-full "
           src={img1}
           alt=""
         />
