@@ -19,6 +19,8 @@ const Contact = ({ closeForm }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const { userFirstName, userLastName, userEmail, userNumber } = formData;
+    console.log(formData)
+    console.log("senttttt")
 
     // Construct the WhatsApp message
     const message = `First Name: ${userFirstName}\nLast Name: ${userLastName}\nEmail: ${userEmail}\nPhone No.: ${userNumber}`;
@@ -85,7 +87,8 @@ const Contact = ({ closeForm }) => {
             />
           </div>
           <div className="flex gap-5">
-            <Button title="Book Appointment" />
+            {/* <Button handleSubmit={handleSubmit} title="Book Appointment" /> */}
+            <button onClick={handleSubmit} className=" bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out">Book Appointment</button>
             <button
               type="button"
               className="bg-gray-400 hover:bg-red-300 text-white px-10 rounded-md active:bg-red-500"
