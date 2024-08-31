@@ -9,6 +9,8 @@ import Residential from "./pages/Residential";
 import CommunityDevelopment from "./pages/CommunityDevelopment";
 import DailyRespite from "./pages/DailyRespite";
 import PersonalSupport from "./pages/PersonalSupport";
+import MissionPage from "./pages/MissionPage";
+import VisionPage from "./pages/VisionPage";
 
 const Layout = () => {
   return (
@@ -30,6 +32,8 @@ const router = createBrowserRouter([
       { path: '/community-development', element: <CommunityDevelopment /> },
       { path: '/daily-respite', element: <DailyRespite /> },
       { path: '/personal-support', element: <PersonalSupport /> },
+      { path: '/mission', element: <MissionPage /> },
+      { path: '/vision', element: <VisionPage /> },
       
     ]
   }

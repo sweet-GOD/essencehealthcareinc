@@ -73,7 +73,7 @@ export const HeroSlider = ({ slides }) => {
                             {slide.text}
                         </h1>
                         <p
-                            className="pb-8"
+                            className="pb-8 text-xl"
                         >
                             {slide.sub}
                         </p>

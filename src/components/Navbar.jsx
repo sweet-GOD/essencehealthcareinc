@@ -54,7 +54,14 @@ const Navbar = () => {
 
   return (
     <div className='border-b shadow-lg top-0 left-0 z-50 w-full bg-[#fff]'>
-      <div className='w-full hidden lg:flex flex-col md:flex-row md:justify-center md:items-center text-xs text-justify border-b-2 border-gray-100 bg-[#3ca9340a]'>
+
+<div className="overflow-hidden py-2 w-full backdrop-blur-sm bg-hoverColor text-white z-50">
+  <div className="animate-marquee whitespace-nowrap text-center text-sm font-light ">
+    Welcome to Essence Healthcare Incorporation || Monday - Friday 8:00 - 6:30 || Saturday and Sunday - CLOSED
+  </div>
+</div>
+
+      <div className='w-full hidden lg:fle flex-col md:flex-row md:justify-center md:items-center text-xs text-justify border-b-2 border-gray-100 bg-[#3ca9340a]'>
         {/* text-[#50d5a0] */}
         <div className='flex items-center justify-center gap-6 border-x-2 border-gray-100 py-5 px-8'>
           <img src={icon1} className='w-10' alt="" />
@@ -87,7 +94,7 @@ const Navbar = () => {
 
       <div className=" w-full z-50 ">
         <div>
-          <div className={`${isScrolled ? 'fixed top-0 left-0  w-full bg-[#ffffffa4] backdrop-blur shadow-lg transition-all duration-300 ' : 'relative bg-transparent '} flex flex-row justify-between z-40  md:px-32 px-4 bg-white text-base pt-2`} >
+          <div className={`${isScrolled ? 'fixed top-0 left-0  w-full bg-[#ffffffc1] backdrop-blur shadow-lg transition-all duration-300 ' : 'relative bg-transparent '} flex flex-row justify-between z-40  md:px-20 px-4 bg-white text-base `} >
             
             <div className=" flex flex-row items-center cursor-pointer">
               <Link to="/" >
@@ -95,8 +102,8 @@ const Navbar = () => {
               </Link>
             </div>
 
-            <div className="flex justify-end items-center gap-10 h-24">
-              <nav className=" hidden lg:flex flex-row items-center text-base font-medium gap-20">
+            <div className="flex justify-end items-center gap-4 h-24">
+              <nav className=" hidden lg:flex flex-row items-center text-base font-medium gap-10">
                 <Link
                   to="/"
                   className={getLinkStyle("/")}
@@ -139,11 +146,7 @@ const Navbar = () => {
             
           </div>
 
-          <div className="overflow-hidden  top-0 left-0 w-full fixed backdrop-blur-sm bg-hoverColor text-white z-50">
-  <div className="animate-marquee whitespace-nowrap text-center font-thin text-xs">
-    Welcome to Essence Healthcare Incorporation
-  </div>
-</div>
+      
           
           <div
             className={`${menu ? "translate-x-0" : "-translate-x-full"

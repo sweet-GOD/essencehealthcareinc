@@ -70,14 +70,14 @@ const Footer = () => {
               About
             </Link>
             <Link
-              to="/"
+              to="/vision"
 
               className=" hover:text-hoverColor duration-300 hover:scale-100 transition-all cursor-pointer"
             >
               Vision Statement
             </Link>
             <Link
-              to="/"
+              to="/mission"
 
               className=" hover:text-hoverColor duration-300 hover:scale-100 transition-all cursor-pointer"
             >

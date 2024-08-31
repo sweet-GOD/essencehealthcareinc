@@ -88,7 +88,7 @@ Daily Respite Service
             <li>• Perform duties according to the established plan of care</li>
             <li>• Learn and follow the caregiving routine</li>
             <li>• Understand the patient’s condition</li>
-            <li>• Provide activities of daily living (Ask pepper on this)</li>
+            <li>• Provide activities of daily living</li>
         </ul>
         </motion.p>
       </div>
