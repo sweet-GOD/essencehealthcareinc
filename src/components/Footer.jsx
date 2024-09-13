@@ -24,7 +24,7 @@ const Footer = () => {
     };
   }, []);
   return (
-    <div className="text-gray-900 bg-cover rounded-t-3xl mt-20   md:pt-0 ">
+    <div className="text-gray-900 bg-cover rounded-t-3xl mt-10   md:pt-0 ">
 
       <div
         className={`fixed bottom-4 right-2 backdrop-blur-md shadow py-3 px-6 rounded-3xl transition-opacity duration-300 ease-in-out z-30 ${isVisible ? 'opacity-100 animate__animated animate__bounce animate__infinite animate__slower' : 'opacity-0'

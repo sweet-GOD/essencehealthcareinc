@@ -33,7 +33,7 @@ export const HeroSlider = ({ slides }) => {
     return (
         <Swiper
             autoplay={{
-                delay: 10000,
+                delay: 30000,
                 disableOnInteraction: false,
             }}
             grabCursor={true}
@@ -56,24 +56,24 @@ export const HeroSlider = ({ slides }) => {
         >
             {slides.map((slide, i) => (
                 <SwiperSlide key={i} className="relative ">
-                    <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-t from-[#1f641a8d] from-70%"></div>
+                    <div className="w-full h-full absolute top-0 left-0  bg-[#111111bf]"></div>
                     <img 
-                        className="h-screen object-cover w-full" 
+                        className="h-screen object-cover  w-full" 
                         src={slide.url} 
                         alt="Slide image" 
                         loading="lazy" 
-                        srcSet={`${slide.url}?w=600 600w, ${slide.url}?w=1200 1200w`} 
+                        srcSet={`${slide.url}`} 
                         sizes="(max-width: 600px) 600px, 1200px"
                     />
 
-                    <div className="w-11/12 lg:w-4/5 absolute lg:bottom-[35%] lg:left-32 bottom-[15%] left-4 space-y-6 mt-10 text-white">
+                    <div className="w-11/12 lg:w-4/5 absolute lg:bottom-[25%] lg:left-32 bottom-[20%] left-4 space-y-6 mt-10 text-gray-100  p-10 ">
                         <h1
-                            className="text-5xl font-bold leading-tight"
+                            className="md:text-5xl text-4xl font-bold leading-tight"
                         >
                             {slide.text}
                         </h1>
                         <p
-                            className="pb-8 text-xl"
+                            className="pb-8 md:text-xl text-justify text-lg"
                         >
                             {slide.sub}
                         </p>

@@ -1,9 +1,11 @@
 import React, { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 import { motion, useAnimation, useInView } from "framer-motion";
 import img from "../assets/img/doc6.jpg";
 
 const ContactUs = () => {
     const ref = useRef(null);
+    const location = useLocation();
     const isInView = useInView(ref);
     const mainControls = useAnimation();
 
@@ -15,8 +17,12 @@ const ContactUs = () => {
         }
     }, [isInView, mainControls]);
 
+    const getLinkStyle = (path) => {
+        return location.pathname === path ? ' py-20' : 'pt-14 lg:pt-40 ';
+      };
+
     return (
-        <div ref={ref} className="flex flex-col lg:flex-row justify-between items-center lg:px-32 px-5 pt-14 lg:pt-40 gap-20 ">
+        <div ref={ref} className={`flex flex-col lg:flex-row justify-between items-center lg:px-32 px-5 gap-20 ${getLinkStyle("/")} `}>
             <motion.div ref={ref}
                 variants={{
                     hidden: { opacity: 0, y: -50 },
@@ -25,7 +31,7 @@ const ContactUs = () => {
                 initial="hidden"
                 animate={mainControls}
                 transition={{ duration: 0.4, delay: 0.4 }} className="h-[420px] overflow-hidden w-full lg:w-2/4">
-                <img className="rounded-lg object-cover h-full w-full" src={img} alt="Contact Us" />
+                <img className="rounded-tr-[50px] rounded-bl-[50px] object-cover h-full w-full" src={img} alt="Contact Us" />
             </motion.div>
 
             <div className="w-full lg:w-2/4 space-y-8">
@@ -41,18 +47,18 @@ const ContactUs = () => {
                     className="space-y-4 "
                 >
                     <div>
-                        <label className="block text-sm font-medium text-gray-700">Name</label>
-                        <input type="text" className="mt-1 p-2 block w-full rounded-md border border-gray-300 shadow-sm focus:border-hoverColor focus:ring-hoverColor" placeholder="Your Name" />
+                        <label className="block text font-medium text-gray-700">Name</label>
+                        <input type="text" className="mt-4 p-2 block w-full rounded-md border border-gray-400 shadow focus:border-hoverColor focus:ring-hoverColor" placeholder="Your Name" />
                     </div>
 
                     <div>
-                        <label className="block text-sm font-medium text-gray-700">Email</label>
-                        <input type="email" className="mt-1 block p-2 w-full rounded-md border border-gray-300 shadow-sm focus:border-hoverColor focus:ring-hoverColor" placeholder="Your Email" />
+                        <label className="block text font-medium text-gray-700">Email</label>
+                        <input type="email" className="mt-4 block p-2 w-full rounded-md border border-gray-400 shadow focus:border-hoverColor focus:ring-hoverColor" placeholder="Your Email" />
                     </div>
 
                     <div>
-                        <label className="block text-sm font-medium text-gray-700">Message</label>
-                        <textarea className="mt-1 block w-full rounded-md p-2 border border-gray-300 shadow-sm focus:border-hoverColor focus:ring-hoverColor" rows="4" placeholder="Your Message"></textarea>
+                        <label className="block text font-medium text-gray-700">Message</label>
+                        <textarea className="mt-4 block w-full rounded-md p-2 border border-gray-400 shadow focus:border-hoverColor focus:ring-hoverColor" rows="4" placeholder="Your Message"></textarea>
                     </div>
 
                     <motion.button

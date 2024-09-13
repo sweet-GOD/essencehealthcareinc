@@ -61,7 +61,7 @@ const About = () => {
           initial="hidden"
           animate={mainControls}
           transition={{ duration: 0.4, delay: 0.6 }} className="h-[430px] overflow-hidden w-full lg:w-3/4">
-        <img className=" rounded-lg object-cover h-full w-full" src={img} alt="img" />
+        <img className="  object-cover h-full w-full rounded-tl-[50px] rounded-br-[50px] " src={img} alt="img" />
       </motion.div>
     </div>
   );
